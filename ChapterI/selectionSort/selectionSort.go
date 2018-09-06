@@ -1,3 +1,5 @@
+// Run the following command:
+// go run selectionSort.go 5 3 4 2 1 7 6
 package main
 
 import (
