@@ -29,26 +29,25 @@ func main() {
   for _, v := range argsInt {
     fmt.Printf("%d\n", v)
   }
-
 }
 
 
 func selectionSort(a []int) {
   var k, l int
   for i := 0; i < len(a) - 1; i++ {
-    k = a[i]
-    l = i
 
-    // k will be the least number in a[i+1:len(a)].
-    // l will be the index of the least number in a[i+1:len(a)].
+    // k will be the least number in a[i:len(a)].
+    // l will be the index of the least number in a[i:len(a)].
+		k = a[i]
+		l = i
     for j := i + 1; j < len(a); j++ {
-      if (a[i] > a[j]) {
+      if (k > a[j]) {
         k = a[j]
         l = j
       }
     }
 
-    // a[0:i+1] has been sorted.
+    // a[0:i] has been sorted.
     a[l] = a[i]
     a[i] = k
   }
