@@ -7,6 +7,8 @@ import (
 	"strconv"
 )
 
+// main() receives command line arguments and returns a sorted array.
+// See selectionSort() for selection-sort.
 func main() {
   flag.Parse()
 
@@ -28,6 +30,7 @@ func main() {
 
 }
 
+
 func selectionSort(a []int) {
   var k, l int
   for i := 0; i < len(a) - 1; i++ {
@@ -35,7 +38,7 @@ func selectionSort(a []int) {
     l = i
 
     // k will be the least number in a[i+1:len(a)].
-    // l will be the index of the least number in a[i+1:len(a)]
+    // l will be the index of the least number in a[i+1:len(a)].
     for j := i + 1; j < len(a); j++ {
       if (a[i] > a[j]) {
         k = a[j]
