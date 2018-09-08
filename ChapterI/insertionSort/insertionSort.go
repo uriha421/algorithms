@@ -10,7 +10,7 @@ import (
 )
 
 // main() receives command line arguments and returns a sorted array.
-// See selectionSort() for insertion-sort.
+// See insertionSort() for insertion-sort.
 func main() {
   flag.Parse()
 
