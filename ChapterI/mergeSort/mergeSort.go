@@ -52,7 +52,7 @@ func merge(a []int, p int, q int, r int) {
 	// k and l is the argument of b and c respectively.
 	k, l := 0, 0
 
-	// merge two sorted arrays, b and c.
+	// We will merge two sorted arrays, b and c.
 	for i := p; i <= r; i++ {
 		if k < q-p+1 && l < r-q && b[k] < c[l] {
 			a[i] = b[k]

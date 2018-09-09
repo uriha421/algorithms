@@ -46,8 +46,8 @@ func selectionSort(a []int) {
 			}
 		}
 
-		// a[0:i] has been sorted.
 		a[l] = a[i]
 		a[i] = k
+		// a[0:i] has been sorted.
 	}
 }
