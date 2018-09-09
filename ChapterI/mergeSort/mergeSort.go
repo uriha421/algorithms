@@ -43,10 +43,10 @@ func mergeSort(a []int, p int, r int) {
 }
 
 func merge(a []int, p int, q int, r int) {
-	b := make([]int,q-p+1)
-	copy(b, a[p : q+1])
-	c := make([]int,r-q)
-	copy(c, a[q+1 : r+1])
+	b := make([]int, q-p+1)
+	copy(b, a[p:q+1])
+	c := make([]int, r-q)
+	copy(c, a[q+1:r+1])
 	// b and c has been sorted.
 
 	// k and l is the argument of b and c respectively.
