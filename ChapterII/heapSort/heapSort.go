@@ -57,7 +57,7 @@ func buildMaxHeap(a []int, heapSize int) {
   }
 }
 
-// If the number all children of a[i] have is not less than the number their children,
+// If the number all children of a[i] have is not less than the number their parent has,
 // then we will make a max-heap whose root is a[i].
 func maxHeaptify(a []int, i int, heapSize int) {
   l := left(i)
